@@ -8,7 +8,12 @@
     "build": "tsc",
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "typescript",
+    "default props",
+    "function component"
+  ],
   "author": "Zzzen",
   "license": "MIT",
   "dependencies": {
