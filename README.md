@@ -44,6 +44,7 @@ function App2() {
 
 function App3() {
     // ❌
+    // Error: "text" is missing!
     return <Wrapped onClick={() => {}}></Wrapped>
 }
 ```
