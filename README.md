@@ -8,6 +8,12 @@ Only one function is exported. Properties appearing in `defaultProps` will becom
 function withDefaultProps(Component, defaultProps): WrappedComponent
 ```
 
+---
+-   NPM: `npm install with-default-props`
+-   Yarn: `yarn add with-default-props`
+---
+
+
 ## Example
 
 ```jsx
