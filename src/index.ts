@@ -13,7 +13,7 @@ type WithDefaultProps<Defaults, Props extends Defaults> = MissingProps<
 > &
   { [P in RequiredKeys<Defaults>]?: Defaults[P] };
 
-export default function withDefaultProps<
+export function withDefaultProps<
   Defaults,
   Props extends Defaults,
   Ret,
@@ -31,6 +31,8 @@ export default function withDefaultProps<
 
   return Wrapped;
 }
+
+export default withDefaultProps;
 
 function getDisplayName(WrappedComponent: any) {
   return WrappedComponent.displayName || WrappedComponent.name || "Component";
