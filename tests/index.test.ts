@@ -41,4 +41,18 @@ describe("withDefaultProps", () => {
     const ref = Symbol("ref");
     expect(Wrapped({}, ref)).toBe(ref);
   });
+
+  it("should infer types", () => {
+    interface Props {
+      width: number;
+      audioFile: string;
+      onPosChange: (ev: any) => void;
+    }
+    
+    function Ccc(props: Props) {
+        return props.width
+    }
+
+    withDefaultProps(Ccc, { width: 123, onPosChange: () => {} })
+  })
 });

@@ -2,12 +2,12 @@ type RequiredKeys<T> = {
   [K in keyof T]-?: ({} extends { [P in K]: T[K] } ? never : K)
 }[keyof T];
 
-type MissingProps<Defaults, Props extends Defaults> = Pick<
+type MissingProps<Defaults, Props> = Pick<
   Props,
   Exclude<keyof Props, RequiredKeys<Defaults>>
 >;
 
-type WithDefaultProps<Defaults, Props extends Defaults> = MissingProps<
+type WithDefaultProps<Defaults, Props> = MissingProps<
   Defaults,
   Props
 > &
@@ -15,7 +15,7 @@ type WithDefaultProps<Defaults, Props extends Defaults> = MissingProps<
 
 export function withDefaultProps<
   Defaults,
-  Props extends Defaults,
+  Props,
   Ret,
   RefParam
 >(
