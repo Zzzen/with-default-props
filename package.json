@@ -1,6 +1,6 @@
 {
   "name": "with-default-props",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -16,15 +16,14 @@
   ],
   "author": "Zzzen",
   "license": "MIT",
-  "dependencies": {
-    "typescript": "^3.4.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-typescript": "^7.3.3",
     "@types/jest": "^24.0.13",
     "babel-jest": "^24.8.0",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "typescript": "^3.5.2"
   }
 }
